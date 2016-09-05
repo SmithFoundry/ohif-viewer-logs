@@ -1,0 +1,379 @@
+root@ubuntu-2gb-nyc2-01:~/Viewers/OHIFViewer/bin# sudo ./medkenOrthanc.sh
+[[[[[ ~/Viewers/OHIFViewer ]]]]]              
+
+=> Started proxy.                             
+=> Started MongoDB.                           
+I20160905-21:22:28.727(0)? Adding DIMSE peers 
+I20160905-21:22:28.878(0)? ------ Testing Meteor Settings ------
+I20160905-21:22:28.880(0)? {
+I20160905-21:22:28.880(0)?   "servers": {
+I20160905-21:22:28.881(0)?     "dicomWeb": [
+I20160905-21:22:28.882(0)?       {
+I20160905-21:22:28.882(0)?         "name": "Medken Orthanc",
+I20160905-21:22:28.883(0)?         "wadoUriRootNOTE": "either this uri is not correct for wado-uri or wado-uri is not configured on orthanc currently",
+I20160905-21:22:28.883(0)?         "wadoUriRoot": "http://dicom-orthanc.medken.com/wado",
+I20160905-21:22:28.884(0)?         "qidoRoot": "http://dicom-orthanc.medken.com/dicom-web",
+I20160905-21:22:28.885(0)?         "wadoRoot": "http://dicom-orthanc.medken.com/dicom-web",
+I20160905-21:22:28.885(0)?         "qidoSupportsIncludeField": false,
+I20160905-21:22:28.886(0)?         "imageRendering": "wadouri",
+I20160905-21:22:28.888(0)?         "requestOptions": {
+I20160905-21:22:28.889(0)?           "logRequests": false,
+I20160905-21:22:28.889(0)?           "logResponses": false,
+I20160905-21:22:28.890(0)?           "logTiming": true
+I20160905-21:22:28.890(0)?         }
+I20160905-21:22:28.891(0)?       }
+I20160905-21:22:28.891(0)?     ],
+I20160905-21:22:28.892(0)?     "dimse": [
+I20160905-21:22:28.892(0)?       {
+I20160905-21:22:28.892(0)?         "name": "ORTHANC_DIMSE",
+I20160905-21:22:28.893(0)?         "peers": [
+I20160905-21:22:28.893(0)?           {
+I20160905-21:22:28.894(0)?             "host": "208.100.41.100",
+I20160905-21:22:28.894(0)?             "port": 4242,
+I20160905-21:22:28.895(0)?             "aeTitle": "MKORTHANC",
+I20160905-21:22:28.896(0)?             "default": true,
+I20160905-21:22:28.896(0)?             "server": false,
+I20160905-21:22:28.897(0)?             "supportsInstanceRetrievalByStudyUid": true
+I20160905-21:22:28.897(0)?           },
+I20160905-21:22:28.898(0)?           {
+I20160905-21:22:28.898(0)?             "host": "0.0.0.0",
+I20160905-21:22:28.899(0)?             "port": 11119,
+I20160905-21:22:28.900(0)?             "aeTitle": "OHIFDCM",
+I20160905-21:22:28.900(0)?             "default": true,
+I20160905-21:22:28.900(0)?             "server": true,
+I20160905-21:22:28.901(0)?             "supportsInstanceRetrievalByStudyUid": true
+I20160905-21:22:28.901(0)?           }
+I20160905-21:22:28.902(0)?         ]
+I20160905-21:22:28.903(0)?       }
+I20160905-21:22:28.903(0)?     ]
+I20160905-21:22:28.904(0)?   },
+I20160905-21:22:28.904(0)?   "defaultServiceType": "dimse",
+I20160905-21:22:28.905(0)?   "public": {
+I20160905-21:22:28.905(0)?     "verifyEmail": false,
+I20160905-21:22:28.906(0)?     "ui": {
+I20160905-21:22:28.907(0)?       "studyListFunctionsEnabled": true
+I20160905-21:22:28.907(0)?     }
+I20160905-21:22:28.908(0)?   }
+I20160905-21:22:28.908(0)? }
+I20160905-21:22:28.908(0)? listening on {"address":"0.0.0.0","family":"IPv4","port":11119}
+I20160905-21:22:28.909(0)? Inserting default protocols
+=> Started your app.
+
+=> App running at: http://localhost:3000/
+I20160905-21:22:59.941(0)? worklist: Services.DIMSE.Studies
+I20160905-21:22:59.943(0)? Associating...
+I20160905-21:22:59.944(0)? Starting Connection...
+I20160905-21:22:59.974(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:22:59.993(0)? Connect
+I20160905-21:22:59.994(0)? Connection established
+I20160905-21:23:00.026(0)? ==Associated
+I20160905-21:23:00.031(0)? Sending command C-FIND-RQ
+I20160905-21:23:00.247(0)? Connection closed
+I20160905-21:23:59.415(0)? worklist: Services.DIMSE.Studies
+I20160905-21:23:59.417(0)? Associating...
+I20160905-21:23:59.418(0)? Starting Connection...
+I20160905-21:23:59.421(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:23:59.438(0)? Connect
+I20160905-21:23:59.440(0)? Connection established
+I20160905-21:23:59.460(0)? ==Associated
+I20160905-21:23:59.463(0)? Sending command C-FIND-RQ
+I20160905-21:23:59.659(0)? Connection closed
+I20160905-21:24:09.782(0)? worklist: Services.DIMSE.Studies
+I20160905-21:24:09.783(0)? Associating...
+I20160905-21:24:09.783(0)? Starting Connection...
+I20160905-21:24:09.783(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:24:09.804(0)? Connect
+I20160905-21:24:09.805(0)? Connection established
+I20160905-21:24:09.829(0)? ==Associated
+I20160905-21:24:09.829(0)? Sending command C-FIND-RQ
+I20160905-21:24:10.012(0)? Connection closed
+I20160905-21:24:16.464(0)? worklist: GetStudyMetadata(%s) 2.25.308408894292992224799145061618802942645
+I20160905-21:24:16.466(0)? Associating...
+I20160905-21:24:16.466(0)? Starting Connection...
+I20160905-21:24:16.468(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:24:16.485(0)? Connect
+I20160905-21:24:16.488(0)? Connection established
+I20160905-21:24:16.508(0)? ==Associated
+I20160905-21:24:16.511(0)? Sending command C-FIND-RQ
+I20160905-21:24:16.864(0)? Data received
+I20160905-21:24:16.902(0)? Connection closed
+I20160905-21:24:16.904(0)? worklist: resultDataToStudyMetadata
+I20160905-21:24:25.215(0)? worklist: GetStudyMetadata(%s) 2.25.308408894292992224799145061618802942645
+I20160905-21:24:25.219(0)? Associating...
+I20160905-21:24:25.219(0)? Starting Connection...
+I20160905-21:24:25.220(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:24:25.235(0)? Connect
+I20160905-21:24:25.237(0)? Connection established
+I20160905-21:24:25.258(0)? ==Associated
+I20160905-21:24:25.261(0)? Sending command C-FIND-RQ
+I20160905-21:24:25.662(0)? Connection closed
+I20160905-21:24:25.665(0)? worklist: resultDataToStudyMetadata
+I20160905-21:24:39.994(0)? worklist: Services.DIMSE.Studies
+I20160905-21:24:40.004(0)? Associating...
+I20160905-21:24:40.005(0)? Starting Connection...
+I20160905-21:24:40.011(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:24:40.020(0)? Connect
+I20160905-21:24:40.021(0)? Connection established
+I20160905-21:24:40.036(0)? ==Associated
+I20160905-21:24:40.043(0)? Sending command C-FIND-RQ
+I20160905-21:24:40.222(0)? Connection closed
+I20160905-21:24:50.850(0)? worklist: GetStudyMetadata(%s) 1.3.6.1.4.1.25403.52241522491.9324.20160309043651.1
+I20160905-21:24:50.853(0)? Associating...
+I20160905-21:24:50.853(0)? Starting Connection...
+I20160905-21:24:50.854(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:24:50.869(0)? Connect
+I20160905-21:24:50.870(0)? Connection established
+I20160905-21:24:50.889(0)? ==Associated
+I20160905-21:24:50.896(0)? Sending command C-FIND-RQ
+I20160905-21:24:51.269(0)? Data received
+I20160905-21:24:51.284(0)? Data received
+I20160905-21:24:51.327(0)? Data received
+I20160905-21:24:51.401(0)? Connection closed
+I20160905-21:24:51.407(0)? worklist: resultDataToStudyMetadata
+I20160905-21:24:57.530(0)? worklist: Services.DIMSE.Studies
+I20160905-21:24:57.533(0)? Associating...
+I20160905-21:24:57.534(0)? Starting Connection...
+I20160905-21:24:57.541(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:24:57.550(0)? Connect
+I20160905-21:24:57.557(0)? Connection established
+I20160905-21:24:57.575(0)? ==Associated
+I20160905-21:24:57.586(0)? Sending command C-FIND-RQ
+I20160905-21:24:57.771(0)? Connection closed
+I20160905-21:25:00.317(0)? worklist: GetStudyMetadata(%s) 1.3.6.1.4.1.25403.52241522491.9324.20160309043651.1
+I20160905-21:25:00.321(0)? Associating...
+I20160905-21:25:00.322(0)? Starting Connection...
+I20160905-21:25:00.322(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:25:00.337(0)? Connect
+I20160905-21:25:00.338(0)? Connection established
+I20160905-21:25:00.363(0)? ==Associated
+I20160905-21:25:00.364(0)? Sending command C-FIND-RQ
+I20160905-21:25:00.756(0)? Data received
+I20160905-21:25:00.793(0)? Data received
+I20160905-21:25:00.865(0)? Connection closed
+I20160905-21:25:00.867(0)? worklist: resultDataToStudyMetadata
+I20160905-21:29:13.974(0)? worklist: Services.DIMSE.Studies
+I20160905-21:29:13.976(0)? Associating...
+I20160905-21:29:13.977(0)? Starting Connection...
+I20160905-21:29:13.978(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:29:13.994(0)? Connect
+I20160905-21:29:13.995(0)? Connection established
+I20160905-21:29:14.016(0)? ==Associated
+I20160905-21:29:14.017(0)? Sending command C-FIND-RQ
+I20160905-21:29:14.200(0)? Connection closed
+I20160905-21:29:21.787(0)? worklist: GetStudyMetadata(%s) 2.25.35933168403701974803318512032068839838
+I20160905-21:29:21.788(0)? Associating...
+I20160905-21:29:21.789(0)? Starting Connection...
+I20160905-21:29:21.792(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:29:21.807(0)? Connect
+I20160905-21:29:21.808(0)? Connection established
+I20160905-21:29:21.827(0)? ==Associated
+I20160905-21:29:21.830(0)? Sending command C-FIND-RQ
+I20160905-21:29:22.239(0)? Connection closed
+I20160905-21:29:22.241(0)? worklist: resultDataToStudyMetadata
+I20160905-21:29:26.205(0)? worklist: Services.DIMSE.Studies
+I20160905-21:29:26.208(0)? Associating...
+I20160905-21:29:26.208(0)? Starting Connection...
+I20160905-21:29:26.209(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:29:26.225(0)? Connect
+I20160905-21:29:26.228(0)? Connection established
+I20160905-21:29:26.245(0)? ==Associated
+I20160905-21:29:26.247(0)? Sending command C-FIND-RQ
+I20160905-21:29:26.424(0)? Connection closed
+I20160905-21:29:27.455(0)? worklist: Services.DIMSE.Studies
+I20160905-21:29:27.459(0)? Associating...
+I20160905-21:29:27.459(0)? Starting Connection...
+I20160905-21:29:27.460(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:29:27.473(0)? Connect
+I20160905-21:29:27.475(0)? Connection established
+I20160905-21:29:27.495(0)? ==Associated
+I20160905-21:29:27.496(0)? Sending command C-FIND-RQ
+I20160905-21:29:27.674(0)? Connection closed
+I20160905-21:29:36.562(0)? worklist: GetStudyMetadata(%s) 2.25.42120767257553128630402356537409110677
+I20160905-21:29:36.564(0)? Associating...
+I20160905-21:29:36.565(0)? Starting Connection...
+I20160905-21:29:36.565(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:29:36.582(0)? Connect
+I20160905-21:29:36.587(0)? Connection established
+I20160905-21:29:36.603(0)? ==Associated
+I20160905-21:29:36.606(0)? Sending command C-FIND-RQ
+I20160905-21:29:36.996(0)? Connection closed
+I20160905-21:29:36.999(0)? worklist: resultDataToStudyMetadata
+I20160905-21:30:00.902(0)? worklist: Services.DIMSE.Studies
+I20160905-21:30:00.904(0)? Associating...
+I20160905-21:30:00.907(0)? Starting Connection...
+I20160905-21:30:00.907(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:30:00.921(0)? Connect
+I20160905-21:30:00.922(0)? Connection established
+I20160905-21:30:00.941(0)? ==Associated
+I20160905-21:30:00.942(0)? Sending command C-FIND-RQ
+I20160905-21:30:01.131(0)? Connection closed
+I20160905-21:30:07.067(0)? worklist: GetStudyMetadata(%s) 1.3.6.1.4.1.14519.5.2.1.7777.9002.198875685720513246512710453733
+I20160905-21:30:07.068(0)? Associating...
+I20160905-21:30:07.070(0)? Starting Connection...
+I20160905-21:30:07.070(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:30:07.086(0)? Connect
+I20160905-21:30:07.088(0)? Connection established
+I20160905-21:30:07.106(0)? ==Associated
+I20160905-21:30:07.108(0)? Sending command C-FIND-RQ
+I20160905-21:30:07.492(0)? Connection closed
+I20160905-21:30:07.496(0)? worklist: resultDataToStudyMetadata
+I20160905-21:32:06.271(0)? worklist: GetStudyMetadata(%s) 2.25.35933168403701974803318512032068839838
+I20160905-21:32:06.273(0)? Associating...
+I20160905-21:32:06.275(0)? Starting Connection...
+I20160905-21:32:06.275(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:32:06.292(0)? Connect
+I20160905-21:32:06.294(0)? Connection established
+I20160905-21:32:06.328(0)? ==Associated
+I20160905-21:32:06.329(0)? Sending command C-FIND-RQ
+I20160905-21:32:06.726(0)? Connection closed
+I20160905-21:32:06.730(0)? worklist: resultDataToStudyMetadata
+I20160905-21:33:03.418(0)? worklist: Services.DIMSE.Studies
+I20160905-21:33:03.422(0)? Associating...
+I20160905-21:33:03.427(0)? Starting Connection...
+I20160905-21:33:03.430(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:33:03.446(0)? Connect
+I20160905-21:33:03.449(0)? Connection established
+I20160905-21:33:03.466(0)? ==Associated
+I20160905-21:33:03.468(0)? Sending command C-FIND-RQ
+I20160905-21:33:03.651(0)? Connection closed
+I20160905-21:33:08.336(0)? worklist: GetStudyMetadata(%s) 1.3.6.1.4.1.5962.99.1.1162449785.723376946.1448566461305.106.0
+I20160905-21:33:08.340(0)? Associating...
+I20160905-21:33:08.346(0)? Starting Connection...
+I20160905-21:33:08.346(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:33:08.356(0)? Connect
+I20160905-21:33:08.357(0)? Connection established
+I20160905-21:33:08.378(0)? ==Associated
+I20160905-21:33:08.382(0)? Sending command C-FIND-RQ
+I20160905-21:33:08.772(0)? Connection closed
+I20160905-21:33:08.776(0)? worklist: resultDataToStudyMetadata
+I20160905-21:33:52.881(0)? worklist: Services.DIMSE.Studies
+I20160905-21:33:52.885(0)? Associating...
+I20160905-21:33:52.886(0)? Starting Connection...
+I20160905-21:33:52.887(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:33:52.900(0)? Connect
+I20160905-21:33:52.901(0)? Connection established
+I20160905-21:33:52.920(0)? ==Associated
+I20160905-21:33:52.923(0)? Sending command C-FIND-RQ
+I20160905-21:33:53.101(0)? Connection closed
+I20160905-21:33:57.608(0)? worklist: Services.DIMSE.Studies
+I20160905-21:33:57.611(0)? Associating...
+I20160905-21:33:57.613(0)? Starting Connection...
+I20160905-21:33:57.614(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:33:57.628(0)? Connect
+I20160905-21:33:57.631(0)? Connection established
+I20160905-21:33:57.651(0)? ==Associated
+I20160905-21:33:57.656(0)? Sending command C-FIND-RQ
+I20160905-21:33:57.834(0)? Connection closed
+I20160905-21:33:59.796(0)? worklist: GetStudyMetadata(%s) 2.25.42120767257553128630402356537409110677
+I20160905-21:33:59.797(0)? Associating...
+I20160905-21:33:59.797(0)? Starting Connection...
+I20160905-21:33:59.799(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:33:59.813(0)? Connect
+I20160905-21:33:59.814(0)? Connection established
+I20160905-21:33:59.834(0)? ==Associated
+I20160905-21:33:59.838(0)? Sending command C-FIND-RQ
+I20160905-21:34:00.234(0)? Connection closed
+I20160905-21:34:00.237(0)? worklist: resultDataToStudyMetadata
+I20160905-21:34:03.378(0)? worklist: GetStudyMetadata(%s) 1.2.840.113745.101000.1008000.38046.4274.5925160
+I20160905-21:34:03.386(0)? Associating...
+I20160905-21:34:03.386(0)? Starting Connection...
+I20160905-21:34:03.387(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:34:03.404(0)? Connect
+I20160905-21:34:03.409(0)? Connection established
+I20160905-21:34:03.426(0)? ==Associated
+I20160905-21:34:03.430(0)? Sending command C-FIND-RQ
+I20160905-21:34:03.818(0)? Data received
+I20160905-21:34:03.871(0)? Connection closed
+I20160905-21:34:03.874(0)? worklist: resultDataToStudyMetadata
+I20160905-21:34:20.428(0)? worklist: Services.DIMSE.Studies
+I20160905-21:34:20.433(0)? Associating...
+I20160905-21:34:20.434(0)? Starting Connection...
+I20160905-21:34:20.435(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:34:20.448(0)? Connect
+I20160905-21:34:20.450(0)? Connection established
+I20160905-21:34:20.469(0)? ==Associated
+I20160905-21:34:20.472(0)? Sending command C-FIND-RQ
+I20160905-21:34:20.650(0)? Connection closed
+I20160905-21:34:28.100(0)? worklist: GetStudyMetadata(%s) 1.3.6.1.4.1.5962.99.1.1162449785.723376946.1448566461305.125.0
+I20160905-21:34:28.103(0)? Associating...
+I20160905-21:34:28.104(0)? Starting Connection...
+I20160905-21:34:28.105(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:34:28.122(0)? Connect
+I20160905-21:34:28.126(0)? Connection established
+I20160905-21:34:28.145(0)? ==Associated
+I20160905-21:34:28.163(0)? Sending command C-FIND-RQ
+I20160905-21:34:28.548(0)? Connection closed
+I20160905-21:34:28.554(0)? worklist: resultDataToStudyMetadata
+I20160905-21:34:28.959(0)? worklist: Services.DIMSE.Studies
+I20160905-21:34:28.962(0)? Associating...
+I20160905-21:34:28.964(0)? Starting Connection...
+I20160905-21:34:28.964(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:34:28.978(0)? Connect
+I20160905-21:34:28.980(0)? Connection established
+I20160905-21:34:28.998(0)? ==Associated
+I20160905-21:34:29.003(0)? Sending command C-FIND-RQ
+I20160905-21:34:29.178(0)? Connection closed
+I20160905-21:34:41.720(0)? worklist: Services.DIMSE.Studies
+I20160905-21:34:41.723(0)? Associating...
+I20160905-21:34:41.724(0)? Starting Connection...
+I20160905-21:34:41.724(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:34:41.736(0)? Connect
+I20160905-21:34:41.737(0)? Connection established
+I20160905-21:34:41.758(0)? ==Associated
+I20160905-21:34:41.759(0)? Sending command C-FIND-RQ
+I20160905-21:34:41.933(0)? Connection closed
+I20160905-21:34:48.065(0)? worklist: GetStudyMetadata(%s) 1.3.6.1.4.1.25403.105418540222.2112.20120725012845.1
+I20160905-21:34:48.068(0)? Associating...
+I20160905-21:34:48.068(0)? Starting Connection...
+I20160905-21:34:48.069(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:34:48.083(0)? Connect
+I20160905-21:34:48.084(0)? Connection established
+I20160905-21:34:48.110(0)? ==Associated
+I20160905-21:34:48.113(0)? Sending command C-FIND-RQ
+I20160905-21:34:48.470(0)? Data received
+I20160905-21:34:48.491(0)? Data received
+I20160905-21:34:48.544(0)? Connection closed
+I20160905-21:34:48.548(0)? worklist: resultDataToStudyMetadata
+I20160905-21:34:52.287(0)? worklist: GetStudyMetadata(%s) 1.3.6.1.4.1.5962.99.1.1162449785.723376946.1448566461305.106.0
+I20160905-21:34:52.294(0)? Associating...
+I20160905-21:34:52.295(0)? Starting Connection...
+I20160905-21:34:52.296(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:34:52.307(0)? Connect
+I20160905-21:34:52.311(0)? Connection established
+I20160905-21:34:52.330(0)? ==Associated
+I20160905-21:34:52.332(0)? Sending command C-FIND-RQ
+I20160905-21:34:52.712(0)? Data received
+I20160905-21:34:52.764(0)? Connection closed
+I20160905-21:34:52.764(0)? worklist: resultDataToStudyMetadata
+I20160905-21:37:19.604(0)? worklist: Services.DIMSE.Studies
+I20160905-21:37:19.605(0)? Associating...
+I20160905-21:37:19.607(0)? Starting Connection...
+I20160905-21:37:19.608(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:37:19.623(0)? Connect
+I20160905-21:37:19.625(0)? Connection established
+I20160905-21:37:19.646(0)? ==Associated
+I20160905-21:37:19.649(0)? Sending command C-FIND-RQ
+I20160905-21:37:19.830(0)? Connection closed
+I20160905-21:37:24.049(0)? worklist: GetStudyMetadata(%s) 1.3.6.1.4.1.25403.52241522491.9324.20160309043651.1
+I20160905-21:37:24.050(0)? Associating...
+I20160905-21:37:24.050(0)? Starting Connection...
+I20160905-21:37:24.052(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:37:24.069(0)? Connect
+I20160905-21:37:24.070(0)? Connection established
+I20160905-21:37:24.096(0)? ==Associated
+I20160905-21:37:24.097(0)? Sending command C-FIND-RQ
+I20160905-21:37:24.478(0)? Data received
+I20160905-21:37:24.518(0)? Data received
+I20160905-21:37:24.599(0)? Connection closed
+I20160905-21:37:24.602(0)? worklist: resultDataToStudyMetadata
+I20160905-21:51:34.568(0)? worklist: Services.DIMSE.Studies
+I20160905-21:51:34.572(0)? Associating...
+I20160905-21:51:34.573(0)? Starting Connection...
+I20160905-21:51:34.574(0)? { host: '208.100.41.100', port: 4242 }
+I20160905-21:51:34.588(0)? Connect
+I20160905-21:51:34.591(0)? Connection established
+I20160905-21:51:34.612(0)? ==Associated
+I20160905-21:51:34.615(0)? Sending command C-FIND-RQ
+I20160905-21:51:34.796(0)? Connection closed
+^C
+root@ubuntu-2gb-nyc2-01:~/Viewers/OHIFViewer/bin# 
